@@ -1,32 +1,44 @@
 const path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'build'),
-  },  
-  plugins:[
-    new HtmlWebPackPlugin({
-      template: path.resolve( __dirname, 'public/index.html' ),
-      filename: 'index.html'
-    })
-  ],
-  module:{
-      rules:[
-        {
-          test:/\.js$/,
-          exclude:/node_modules/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env','@babel/preset-react']
-            }
-          }
-        },
-      ]
-  },
-  devServer: {},
-}
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'index.bundle.js'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        "presets": [
+                            "@babel/preset-env",
+                            "@babel/preset-react"
+                        ]
+                    }
+                }
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+            {
+                test: /\.(png|jp(e*)g|svg|gif)$/,
+                use: ['file-loader'],
+            },
+        ]
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+          template: path.join(__dirname, "src", "index.html"),
+        }),
+    ],
+    devServer: {
+        port: 3030,
+        liveReload: true
+    },
+};
