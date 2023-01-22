@@ -6,8 +6,10 @@
   "main": "./src/index.js",
   "scripts": {
     "dev": "webpack serve --mode development",
-    "start": "webpack serve --mode development --open --hot",
-    "build": "webpack --mode production"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
