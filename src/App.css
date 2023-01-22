@@ -1,4 +1,7 @@
 body {
   background-color: hsl(200, 21%, 11%);
+  overflow-x: hidden;
 }
+
+
 
