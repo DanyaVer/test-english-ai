@@ -1,0 +1,9 @@
+.results h3 {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    max-width: 1500px;
+ 
+    color: #EDECE9;
+    font-size: 24px;
+}

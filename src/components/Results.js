@@ -1,13 +1,23 @@
-import React from 'react';
-import './Results.css'
+import React from "react";
+import "./Results.css";
 
-function CountResults() {
-    return 0;
-}
-
-export default function SubmitResults(props) {
-    return (
-        <>
-        </>
-    )
+export default function ShowResults(props) {
+  return (
+    <>
+      <div className="results">
+        <h3>
+          {"Headings: " +
+            props.resultHeadings.correct +
+            "/" +
+            props.resultHeadings.amount}
+        </h3>
+        <h3>
+          {"Statements: " +
+            props.resultStatements.correct +
+            "/" +
+            props.resultStatements.amount}
+        </h3>
+      </div>
+    </>
+  );
 }

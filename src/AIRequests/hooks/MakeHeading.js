@@ -5,14 +5,14 @@ import { generateHeadingOptions, CREATE_HEADING_PROMPT_ENDPOINT } from '../const
 
 export const useHeadingGenerator = (text) => {
     const [headings, setHeadings] = useState([]); // Set the text state
-    const [headingIsLoading, setHeadingIsLoading] = useState(false);
+    const [headingAreLoading, setHeadingAreLoading] = useState(false);
 
     // async-await function to handle asynchronous
     const generateHeading = useCallback(async () => {
         let arr = [];
         try {
             setHeadings([]);
-            setHeadingIsLoading(true);
+            setHeadingAreLoading(true);
             text.forEach(async (paragraph, index) => {
                 // DevTool help (too big)
                 // console.log(`Generating heading for ${index} paragraph: ` + paragraph);
@@ -31,21 +31,18 @@ export const useHeadingGenerator = (text) => {
         } catch (error) {
             console.error(error);
         } finally {
-            setHeadingIsLoading(false);
+            setHeadingAreLoading(false);
             // shuffling headings
             arr.sort((a, b) => 0.5 - Math.random());
             setHeadings(arr);
-            console.log("------------------------");
-            console.log(headings);
-            console.log("------------------------");
             // devTool
             console.log("HEADINGS ARE GENERATED");
         }
-    }, [setHeadingIsLoading, setHeadings, text]);
+    }, [setHeadingAreLoading, setHeadings, text]);
 
     return {
         headings,
         generateHeading,
-        headingIsLoading
+        headingAreLoading
     }
 }

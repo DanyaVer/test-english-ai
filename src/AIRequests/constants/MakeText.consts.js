@@ -25,12 +25,12 @@ export const generateTextOptions = (wordsSequence) => {
         prompt = prompt1Example1 + SEPARATOR +
                  prompt1Example2 + SEPARATOR +        
                  prompt1Start + promptEnd;
-    else
+    else 
         prompt = prompt2Example + SEPARATOR + 
                  prompt2Start + wordsSequence + promptEnd;
     
     // for esier work with DevTool
-    console.log(prompt);
+    console.log("prompt:" + prompt);
     return {
         headers: {
             "Authorization": `Bearer ${API_KEY}`,

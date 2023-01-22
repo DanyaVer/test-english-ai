@@ -1,20 +1,17 @@
-import './App.css';
-import Header from './components/Header';
-import WordsSequence from './components/WordsSequence';
+import "./App.css";
+import Header from "./components/Header";
+import WordsSequence from "./components/WordsSequence";
 
 function App() {
-
-  return ( 
+  return (
     <div className="App">
       <header className="App-header">
         <Header />
       </header>
-      
-      <WordsSequence />
-      
-      <footer>
 
-      </footer>
+      <WordsSequence />
+
+      <footer></footer>
     </div>
   );
 }

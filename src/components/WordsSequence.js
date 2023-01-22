@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react'
-import LoadingButton from '@mui/lab/LoadingButton';
-import IconButton from '@mui/material/IconButton';
-import AutorenewIcon from '@mui/icons-material/Autorenew';
-import { useTextGenerator } from '../AIRequests/hooks/MakeText.js';
-import CreateTests from './TestModules/CreateTests';
-import './WordsSequence.css';
+import React, { useState } from "react";
+import LoadingButton from "@mui/lab/LoadingButton";
+import IconButton from "@mui/material/IconButton";
+import AutorenewIcon from "@mui/icons-material/Autorenew";
+import { useTextGenerator } from "../AIRequests/hooks/MakeText.js";
+import CreateTests from "./TestModules/CreateTests";
+import "./WordsSequence.css";
 
 export default function WordsSequence() {
   const [wordsSequence, setWordsSequence] = useState("");
-  const onChangeWordsSequnce = e => {
+  const onChangeWordsSequnce = (e) => {
     setWordsSequence(e.target.value);
   };
   // Reset Input Field handler
@@ -16,19 +16,19 @@ export default function WordsSequence() {
     setWordsSequence("");
   };
 
-  const { text, textIsLoading, generateText } =
-    useTextGenerator(wordsSequence);
+  const { text, textIsLoading, generateText } = useTextGenerator(wordsSequence);
 
   return (
     <>
-      <div className='text'>
+      <div className="text">
         <p>Generate unique text using AI </p>
         <p>by entering a few words!</p>
       </div>
-      <div className='textField'>
+      <div className="textField">
         <input
-          className='input'
-          id='textFieldWords'
+          autoComplete="off"
+          className="input"
+          id="textFieldWords"
           value={wordsSequence}
           onChange={onChangeWordsSequnce}
           placeholder="Write a sequence of words"
@@ -43,9 +43,10 @@ export default function WordsSequence() {
             width: "50px",
             color: "white",
             backgroundColor: "hsla(0, 0%, 85%, 0.4)",
-            "&:hover": { backgroundColor: "hsla(0, 0%, 85%, 0.3)" }
+            "&:hover": { backgroundColor: "hsla(0, 0%, 85%, 0.3)" },
           }}
-          onClick={() => resetWordsSequence()}>
+          onClick={() => resetWordsSequence()}
+        >
           <AutorenewIcon fontSize="large" className="iconColor" />
         </IconButton>
 
@@ -58,12 +59,13 @@ export default function WordsSequence() {
             fontFamily: "Jost, sans-serif",
             borderRadius: "56px",
             background: "hsl(43, 100%, 57%)",
-            "&:hover": { backgroundColor: "hsla(43, 100%, 57%, 0.8)" }
+            "&:hover": { backgroundColor: "hsla(43, 100%, 57%, 0.8)" },
           }}
           onClick={() => {
             console.log(wordsSequence);
             generateText();
-          }}>
+          }}
+        >
           Generate
         </LoadingButton>
       </div>
@@ -75,11 +77,10 @@ export default function WordsSequence() {
                 <b>{String.fromCharCode(65 + index) + ". "}</b>
                 {el}
               </p>
-            )
+            );
         })}
       </div>
       {text.length > 0 && <CreateTests text={text} />}
     </>
-
-  )
+  );
 }

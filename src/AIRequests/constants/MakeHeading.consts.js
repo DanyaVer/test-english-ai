@@ -11,7 +11,7 @@ const promptEnd = "Heading:"
 export const generateHeadingOptions = (paragraph) => {
     let prompt = promptExamples + promptStart + paragraph + promptEnd;
     // for esier work with DevTool (takes too much space)
-    // console.log(prompt);
+    // console.log("prompt:" + prompt);
     return {
         headers: {
             "Authorization": `Bearer ${API_KEY}`,

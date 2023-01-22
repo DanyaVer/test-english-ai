@@ -7,12 +7,8 @@
 }
 
 
-.results h3 {
-    position: relative;
-    left: 5%;
-    width: 90%;
-    max-width: 1500px;
- 
-    color: #EDECE9;
-    font-size: 24px;
+@media only screen and (min-width: 480px) and (max-width: 990px){
+    .btnSubmit {
+        left: calc((100% - 300px) / 2);
+    }
 }

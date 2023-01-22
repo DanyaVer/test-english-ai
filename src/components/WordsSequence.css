@@ -9,11 +9,16 @@
     
     font-weight: 500;
     font-size: 30px;
-    line-height: 40%;
+    /* line-height: 40%; */
 
     letter-spacing: 0.035em;
 
     color: #FFFFFF;
+}
+
+.text p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .textField {
