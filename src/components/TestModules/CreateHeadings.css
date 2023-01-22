@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;700&display=swap');
+
+.headersArea {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    max-width: 1500px;
+ 
+    color: #EDECE9;
+    font-size: 24px;
+}
+
+.selectHeadingsArea {
+    width: 55px;
+    height: 55px;
+    color: #EDECE9;
+    font-family: Jost, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #0A0E10;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #0A0E10;
+}
+

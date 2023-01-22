@@ -1,0 +1,82 @@
+.text {
+    /* Generate unique text using AI by entering a few words! */
+    position: relative;
+    left: 5%;
+    /* height of top margin + header text height */
+    margin: 0;
+    margin-top: 80px;
+    width: auto;
+    
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40%;
+
+    letter-spacing: 0.035em;
+
+    color: #FFFFFF;
+}
+
+.textField {
+    position: relative;
+    /*200 px - btnGenerate size*/
+    width: calc(90% - 200px);
+    min-width: 300px;
+    max-width: 890px;
+    height: 50px;
+    margin-top: 80px;
+    left: 5%;
+
+}
+
+/*--- Make css for generate button ---*/
+
+.input {
+    height: 50px;
+    /* substructing (minus) padding */
+    width: calc(100% - 44px);
+    outline: 0px;
+    border: 0;
+    border-radius: 40px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 54px;
+    background: rgba(217, 217, 217, 0.46);
+    color: white;
+}
+
+.input::placeholder {
+    color: #ABABAB;
+}
+
+.iconButton {
+    left: calc(100% - 30px);
+    top: -50px;
+}
+
+/* Change font and capitals*/
+.btnGenerate {
+    position: relative;
+    width: 140px;
+    left: calc(100% + 15px);
+    top: -50px;
+}
+
+.textArea {
+    position: relative;
+    width: 90%;
+    max-width: 1500px;
+    height: auto;
+    left: 5%;
+    /* previous + input height */
+    margin-top: 50px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 153%;
+
+    text-align: justify;
+    letter-spacing: 0.04em;
+    font-feature-settings: 'ss01' on;
+    background-color: none;
+    color: #EDECE9;
+}

@@ -1,0 +1,8 @@
+export const text2 = 
+`Recent research suggests that pet ownership has some surprising benefits for children. The study of 256 children in three UK schools found that pets were linked to a 20% reduction in the number of days children were off sick from school. According to Dr. June McNicholas, form er lecturer and world expert on human-animal interaction, owning a pet can have a positive influence on immune system functioning. She found that children who grew up in households with pets had a lower risk of developing allergies and asthma in later life.
+
+Pets also make children happier. They are associated with improved psychological well-being, which in turn impacts positively on physical health. Physically disabled children with pets, guide dogs for example, were found to experience even greater health benefits. Pets offer psychological support and a ‘risk free’ relationship, a relationship not determined by achievements or status.
+
+The study did not find significant differences between owning a cat and owning a dog, though it is possible that exposure to cats resulted in slightly better immune functioning. This confirms the results of an earlier American study which found that cats were more effective than dogs in reducing rates of asthma.
+
+Other studies have shown that these health benefits are not limited to children. A ground-breaking Australian study found that adults who own pets had lower blood pressure and cholesterol levels. These results were confirmed by American researchers who found that the positive effect of pet ownership on blood pressure were long-lasting. Access to pets can also reduce the severity of depression among hospital patients and help ease the misery of bereavement.`

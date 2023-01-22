@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;700&display=swap');
+
+.header {
+    position: relative;
+    width: 135px;
+    height: 85px;
+    
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.title {
+    /* T.E.A */
+    height: 72px;
+
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.045em;
+
+    color: #EFEFEF;
+}
+.symbolT {
+    letter-spacing: 0;
+    color: #FFC123;
+}
+.symbolE {
+    color: #FF4845;
+}
+.symbolA {
+    color: #4056FF;
+}
+
+.abreviation {
+    /* Test English AI */
+    position: relative;
+    text-align: center;
+    top: -22px;
+    left: calc(5% - 2px);
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.045em;
+
+    color: #EFEFEF;
+}

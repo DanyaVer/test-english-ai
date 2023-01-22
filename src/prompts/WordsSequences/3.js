@@ -1,0 +1,1 @@
+export const wordsSequence3 = "perpetually, fair games, bids, feasible";

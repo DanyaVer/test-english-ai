@@ -1,0 +1,18 @@
+.btnSubmit {
+    position: relative;
+    left: 37%;
+    width: 300px;
+    font-size: 24px;
+    margin: 50px;
+}
+
+
+.results h3 {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    max-width: 1500px;
+ 
+    color: #EDECE9;
+    font-size: 24px;
+}

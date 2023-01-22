@@ -1,0 +1,19 @@
+QUESTIONS 1-4
+Do the statements 1-4 below agree with the information given in the following text? Write:
+TRUE 
+FALSE 
+NOT GIVEN
+if the text confirms the statement
+if the text confirms the opposite of the statement
+if it is impossible to know from the text
+
+1. More than twice as many adults have Type 2 diabetes as did thirty years ago.
+2. Nearly a third of people in the Pacific Islands have diabetes.
+3. Type 2 diabetes is a long-term illness which can be caused by insufficient insulin production.
+4. The increase in Type 2 diabetes is partly due to greater life expectancy.
+
+QUESTIONS 5-7
+Complete the sentences 5-7 using NO MORE THAN THREE WORDS from the passage above.
+5. Treating diabetes places a significant _ on health care budgets.
+6. If a person _ with diabetes early, he or she can be cured.
+7. Most people _ in the low-calorie diet study made a good recovery.

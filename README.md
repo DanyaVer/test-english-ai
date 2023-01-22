@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+<p align="center">
+<img src="./public/logo.png" width="200">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Description
 
-## Available Scripts
+It makes use of the state-of-the-art Jurassic-1 language models to generate reading test accordingly to the seqence of words or phrases (or without) divided by coma.
 
-In the project directory, you can run:
+A web application 'T.E.A' or 'Test English AI' as English-study-helper is designed for students and English learners studying for English language proficiency tests such as TOEFL, IELTS, Cambridge etc and offers personalized reading test preparation with AI-generated texts and various tasks options to them. 
 
-### `npm start`
+Say goodbye to same-type texts and drilling essential vocabulary into your head and get acquainted with practical exercises that are aimed at improving your specific skills and expanding your vocabulary. Acquiring essential vocab is carried out through completing selected type of tasks on specially generated texts, based on the user-specified sequence of words.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+All generated texts and tests to them were specifically trained on IELTS academic and general reading tasks in order to bring the user closer to real English exam assignment and improve its performance in it.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Primarily built with React.js. Site makes use of the state-of-the-art Jurassic-1 language models.
 
-### `npm test`
+## Getting Started
+1. Clone the repository 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`git clone https://github.com/DanyaVer/ai-reading-exam.git`
 
-### `npm run build`
+2. Navigate to cloned folder
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`cd ai-reading-exam`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm install`
 
-### `npm run eject`
+4. Start the app in your local environment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Play
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Write a sequence of words (you can reset the written sequence by clicking on the icon button on the right of the input field) and press the "Generate" button, which will invoke the generateText() function. This function sends an API request to the `/complete` endpoint of the Jurassic-1 Grande model. The main request includes a "one shot" `prompt` parameter with a value that prompts the model to generate a new made-up text related to words. Other parameters worth noticing are `maxTokens`, `temperature`, and `stopSequences`.
+<br />
 
-## Learn More
+2. Once the model returns a response, it is rendered below the Input Field and "Generate" button as text with latin letters prior to each paragraph.
+<br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Then you can see two buttons below: "Headings" and "True/False/Not given". When clicked, each shows tasks for the module it represents. Every sentence there is generated for one paragraph which is used in prompt value in another two API request to Jurassic-1 Grande.
+<br />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. After answering these questions, you can click the "Submit" button and it'll check your answers, color every select object either as correct or wrong one, and in the bottom will be created two additional lines with results for each category.
 
-### Code Splitting
+<p align="center">
+<img src="./public/MainScreen.png" width="100%">
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contribute
 
-### Analyzing the Bundle Size
+This is a submitted project to AI21 Labs AIHacathon on the platform AI. 
+Your contributions are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+Made by the team The Think Tank
+</p>

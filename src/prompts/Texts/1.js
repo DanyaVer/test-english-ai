@@ -1,0 +1,8 @@
+export const text1 = 
+`Scientists from the UK and USA have recently reported that over the last 30 years the incidence of Type 2 diabetes has more than doubled. They estimate that nearly 350 m illion adults worldwide now have the disease. In every country studied, rates of diabetes had either remained the same or increased. The rise has been particularly acute in the Pacific Islands with up to thirty per cent of women in some areas suffering from the condition.
+
+Type 2 diabetes is a chronic progressive condition which occurs when there is too much glucose in the blood, either because the pancreas does not produce enough insulin or because cells have become resistant to insulin. Complications resulting from diabetes include damage to kidneys, blindness, heart disease and strokes.
+
+The condition is associated with obesity; however, nearly three-quarters of the rise has been attributed to longer lifespans and better diagnosis. Having a close relative with the disease is also a risk factor.
+
+Type 2 diabetes has also become a major burden on health care systems around the world. Expenditure on treating the condition is projected to rise to over £30 billion annually within the next three years. However, a recent study has shown that if the condition is diagnosed within four years of onset, it can be reversed by following a low-calorie diet. Limiting food intake to 600 calories per day for eight weeks was shown to have a lasting effect on the majority of subjects who took part in the trial. For many, Type 2 diabetes can be cured - and it need not cost the earth.`
