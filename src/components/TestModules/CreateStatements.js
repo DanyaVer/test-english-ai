@@ -1,4 +1,5 @@
 import React from "react";
+import { ContextExclusionPlugin } from "webpack";
 import "./CreateStatements.css";
 
 export default function CreateStatementsTest(props) {
@@ -39,8 +40,9 @@ function CreateSelector(props) {
         id={"selectStatements" + props.i}
       >
         {props.options.map((el, i) => {
+          console.log("menuItemStatement" + props.i + "" + i);
           return (
-            <option key={"menuItemStatement" + props.i + i} value={i}>
+            <option key={"menuItemStatement" + props.i + "" + i} value={i}>
               {el}
             </option>
           );

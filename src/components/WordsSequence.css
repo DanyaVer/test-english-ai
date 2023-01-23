@@ -9,7 +9,6 @@
     
     font-weight: 500;
     font-size: 30px;
-    /* line-height: 40%; */
 
     letter-spacing: 0.035em;
 
@@ -45,6 +44,8 @@
     padding: 0;
     padding-left: 10px;
     padding-right: 54px;
+
+    font-size: 20px;
     background: rgba(217, 217, 217, 0.46);
     color: white;
 }

@@ -16,7 +16,6 @@ export const useStatementsGenerator = (text) => {
             setStatements([]);
             setStatementsAreLoading(true);
             text.forEach(async (paragraph, index) => {
-                console.log(index);
                 // DevTool help (too big)
                 // console.log(`Generating statement for ${index} paragraph: ` + paragraph);
 
@@ -36,15 +35,22 @@ export const useStatementsGenerator = (text) => {
                     options = generateNotGivenOptions(paragraph);
                     PROMPT_END_POINT = CREATE_NOT_GIVEN_PROMPT_ENDPOINT;
                 }
-                response = await fetch(PROMPT_END_POINT, options);
-                const parsedResponse = await response.json();
-                const res = parsedResponse.completions[0].data.text;
+                // for correcting results.
+                do {
+                    var flag = false;
+                    response = await fetch(PROMPT_END_POINT, options);
+                    const parsedResponse = await response.json();
+                    var res = parsedResponse.completions[0].data.text;
+                    if (res.split(' ').length < 3 || res.split(' ').length > 16 || res.split('\n').length > 3) {
+                        // Devtool help (too big)
+                        // console.log("Repeat generating statement for paragraph " + index);
+                        // console.log("Wrong statement: " + res);
+                        flag = true;
+                    }
+                } while(flag)
                 arr.push([res, rand])
-                // Devtool help
-                console.log('Generated statement: ', res);
-                // let list = res.split('\n');
-                // setHeadings(list);
-                // console.log(list); 
+                // Devtool help (too big)
+                // console.log('Generated statement: ', res);
             });
         } catch (error) {
             console.error(error);

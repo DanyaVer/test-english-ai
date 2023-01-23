@@ -29,8 +29,8 @@ export const generateTextOptions = (wordsSequence) => {
         prompt = prompt2Example + SEPARATOR + 
                  prompt2Start + wordsSequence + promptEnd;
     
-    // for esier work with DevTool
-    console.log("prompt:" + prompt);
+    // for esier work with DevTool (too big)
+    // console.log("prompt:" + prompt);
     return {
         headers: {
             "Authorization": `Bearer ${API_KEY}`,
