@@ -32,9 +32,6 @@ export default function WordsSequence() {
           value={wordsSequence}
           onChange={onChangeWordsSequnce}
           placeholder="Write a sequence of words"
-          onKeyDown={(e) => {
-            if (e.keyCode === 13) document.getElementById("btnGenerate").click();
-          }}
         />
         <IconButton
           className="iconButton"
@@ -55,7 +52,6 @@ export default function WordsSequence() {
 
         <LoadingButton
           className="btnGenerate"
-          id="btnGenerate"
           variant="contained"
           size="large"
           loading={textIsLoading}
@@ -66,7 +62,7 @@ export default function WordsSequence() {
             "&:hover": { backgroundColor: "hsla(43, 100%, 57%, 0.8)" },
           }}
           onClick={() => {
-            // console.log(wordsSequence);
+            console.log(wordsSequence);
             generateText();
           }}
         >
