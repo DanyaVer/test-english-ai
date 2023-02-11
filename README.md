@@ -17,7 +17,7 @@ Primarily built with React.js. Site makes use of the state-of-the-art Jurassic-1
 ## Getting Started
 1. Clone the repository 
 
-`git clone https://github.com/DanyaVer/ai-reading-exam.git`
+`git clone https://github.com/DanyaVer/test-english-ai.git`
 
 2. Navigate to cloned folder
 
@@ -35,7 +35,7 @@ Primarily built with React.js. Site makes use of the state-of-the-art Jurassic-1
 
 ## Play
 
-0. Open [https://test-english-ai.herokuapp.com/](https://test-english-ai.herokuapp.com/) to interact.
+0. Open [https://test-english-ai.herokuapp.com/](https://test-english-ai.danyaver.repl.co/) to interact.
 <br />
 
 1. Write a sequence of words (you can reset the written sequence by clicking on the icon button on the right of the input field) and press the "Generate" button, which will invoke the generateText() function. This function sends an API request to the `/complete` endpoint of the Jurassic-1 Grande model. The main request includes a "one shot" `prompt` parameter with a value that prompts the model to generate a new made-up text related to words. Other parameters worth noticing are `maxTokens`, `temperature`, and `stopSequences`.
